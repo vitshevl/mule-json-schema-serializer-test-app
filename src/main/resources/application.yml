@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:19092
+    auto.register.schemas: true
+    use.latest.version: false
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+server:
+  port: 8093
